@@ -17,7 +17,6 @@ const ChapterCard = ({ chapter }) => {
 
     axios.post(`http://localhost:3000/courses/${chapter.CourseId}/chapters/${chapter.id}/rate`, { rating: newValue })
       .then(response => {
-        // Show success message from the backend
         setMessage(response.data.message);
         setOpen(true);
       })
@@ -54,7 +53,7 @@ const ChapterCard = ({ chapter }) => {
         anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
         sx={{ 
           '& .MuiSnackbarContent-root': { 
-            backgroundColor: 'green' // Optional: change background color
+            backgroundColor: 'green' 
           }
         }}
       >

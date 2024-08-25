@@ -5,9 +5,9 @@ const cors = require('cors');
 
 const app = express();
 app.use(cors({
-    origin: 'http://localhost:5173', // Replace with your React app's URL
-    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Specify allowed methods if needed
-    allowedHeaders: ['Content-Type', 'Authorization'] // Specify allowed headers if needed
+    origin: 'http://localhost:5173', 
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization'] 
   }));
 app.use(express.json());
 

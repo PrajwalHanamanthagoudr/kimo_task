@@ -8,16 +8,14 @@ const CourseCard = ({ course }) => {
     const navigate = useNavigate();
 
     const handleClick = () => {
-        navigate(`/courses/${course.id}`); // Navigate to course detail page
+        navigate(`/courses/${course.id}`); 
     };
 
-    // Define an object that maps course IDs to image URLs
     const imageUrls = {
         1: 'https://storage.googleapis.com/courses_provider_icons/rect-_image/Large%2039-min.png',
         2: 'https://storage.googleapis.com/courses_provider_icons/rect-_image/Large%2040-min.png',
         3: 'https://storage.googleapis.com/courses_provider_icons/rect-_image/Large%2010-min.png',
         4: 'https://storage.googleapis.com/courses_provider_icons/rect-_image/Large%2017-min.png',
-        // Add more mappings as needed
     };
 
     return (
